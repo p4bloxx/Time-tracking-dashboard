@@ -1,0 +1,207 @@
+//Tipography
+$ff: "Rubik", sans-serif;
+
+$fs-15: 0.9375rem;
+$fs-18: 1.125rem;
+$fs-24: 1.5rem;
+$fs-32: 2rem;
+$fs-40: 2.5rem;
+$fs-56: 3.5rem;
+
+$fw-light: 300;
+$fw-reg: 400;
+$fw-mdm: 500;
+
+//Colors
+$bg-blue: #0E1323;
+$bg-blue-card: #1C204B;
+$bg-blue-card-hover: #33397A;
+$white: #FFFFFF;
+$very-light-purple: #BBC0FF;
+$light-purple: #7078C9;
+$purple: #5747EA;
+
+$bg-work: #FF8B64;
+$bg-play: #55C2E6;
+$bg-study: #FF5E7D;
+$bg-exercise: #4BCF82;
+$bg-social: #7335D2;
+$bg-selfCare: #F1C75B;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+button{
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+    @media screen and (min-width: 1200px) {
+      cursor: pointer;
+    }
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  /* overflow-y: hidden; */
+  position: relative;
+  font-family: $ff;
+  background-color: $bg-blue;
+  color: $white;
+  font-weight: $fw-reg;
+    @media screen and (min-width: 767px) {
+      display: grid;
+      place-content: center;
+    }
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+//Utilities and
+.fw-light{
+  font-weight: $fw-light;
+}
+
+.fw-reg{
+  font-weight: $fw-reg;
+}
+
+.fw-mdm{
+  font-weight: $fw-mdm;
+}
+
+.clr-v-light-purple{
+  color: $very-light-purple;
+}
+
+.clr-light-purple{
+  color: $light-purple;
+}
+
+.bg-card{
+  background-color: $bg-blue-card;
+}
+
+.b-radius-15{
+  border-radius: $fs-15;
+}
+
+.bg-main-card{
+  background-color: $purple;
+}
+
+.bg-work{
+  background-color: $bg-work;
+}
+
+.bg-play{
+  background-color: $bg-play;
+}
+
+.bg-study{
+  background-color: $bg-study;
+}
+
+.bg-exercise{
+  background-color: $bg-exercise;
+}
+
+.bg-social{
+  background-color: $bg-social;
+}
+
+.bg-self-care{
+  background-color: $bg-selfCare;
+}
+
+@mixin flex-row{
+  @include flex-row-between;
+  justify-content: center;
+}
+
+@mixin flex-row-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column{
+  @include flex-row-between;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-pic{
+  width: 4rem;
+  border: 3px solid $white;
+  border-radius: 50%;
+    @media screen and (min-width: 767px) {
+      width: 4.875rem;
+    }
+}

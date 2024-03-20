@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time tracking dashborad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/variables.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <script src="JS/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="main-card | bg-card b-radius-15">
+        <div class="name-card | bg-main-card b-radius-15">
+          <div class="profile-pic">
+            <img src="Images/image-jeremy.png" alt="image profile of Jeremy Robson">
+          </div>
+          <div class="name-box">
+            <span class="clr-v-light-purple">Report for</span>
+            <h1 class="name fw-light">Jeremy Robson</h1>
+          </div>
+        </div>
+        <div class="btn-box">
+          <button id="daily" class="clr-light-purple">Daily</button>
+          <button id="weekly" class="clr-light-purple">Weekly</button>
+          <button id="monthly" class="clr-light-purple">Monthly</button>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-work"></div>
+          <img src="Images/icon-work.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Work</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>            
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="32">32</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 36hrs</p>
+            </div> 
+          </div>
+        </div>
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-play"></div>
+          <img src="Images/icon-play.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Play</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="10">10</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 8hrs</p>
+            </div> 
+          </div>
+        </div>
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-study"></div>
+          <img src="Images/icon-study.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Study</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="4">4</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 7hrs</p>
+            </div> 
+          </div>
+        </div>
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-exercise"></div>
+          <img src="Images/icon-exercise.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Exercise</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="4">4</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 5hrs</p>
+            </div> 
+          </div>
+        </div>
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-social"></div>
+          <img src="Images/icon-social.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Social</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="5">5</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 10hrs</p>
+            </div> 
+          </div>
+        </div>
+        <div class="card | b-radius-15">
+          <div class="bg-color | bg-self-care"></div>
+          <img src="Images/icon-self-care.svg" alt="">
+          <div class="info | bg-card b-radius-15">
+            <div class="settings">
+              <h2 class="fw-mdm">Self Care</h2>
+              <svg width="21" height="5" class="dots" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            </div>
+            <div class="info-activity">
+              <span class="time | fw-light"><span data-hour="2">2</span>hrs</span>
+              <p class="clr-v-light-purple">Last Week - 2hrs</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+</body>
+</html>
